@@ -1,10 +1,10 @@
-class Calculator {
-  private double result;
+public class Calculator {
+  private int result;
 
   private Calculator(){
     result = 0;
   }
-  public static Calculator intialCalculator(){
+  public static Calculator initialCalculator(){
     return new Calculator();
   }
   public Calculator add(int number){
@@ -17,16 +17,7 @@ class Calculator {
     return this;
   }
 
-  public Calculator power(double number,double powerOf){
-    result = Math.pow(number,powerOf);
-    return this;
-  }
-
-  private void calculatingResult(){
-    System.out.println("The result is :"+ result);
-  }
-
-  public void printResult(){
-    calculatingResult();
+  public int calculatingResult(){
+    return result;
   }
 }
